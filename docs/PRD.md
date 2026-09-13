@@ -23,7 +23,7 @@
 |---|---|---|---|
 | 首要：独立视频/故事创作者 | 将想法做成可预览片段，快速判断风格与效果 | 本次用户明确要求先测试一个片段、使用便宜模型 | 小范围生成、明确费用边界、可修改、可恢复 |
 | 次要：小型内容团队 | 复用人物与场景，逐集制作并审阅 | 目标用户假设，尚未访谈团队 | 资产复用、版本、审阅记录；协作为后续阶段 |
-| 次要：素材型创作者 | 在画布上连接素材，探索多图参考视频 | 用户主动对标小云雀画布 | 上传、连接、引用、局部生成 |
+| 次要：素材型创作者 | 在画布上连接素材，探索多图参考视频 | 用户提出多图参考与节点操作需求 | 上传、连接、引用、局部生成 |
 
 核心任务表达：当我有一个故事想法时，希望先把其中一个片段做出来，能按意图调整，并清楚知道下一次点击会生成什么、是否花费模型费用。
 
@@ -33,7 +33,7 @@
 
 ### 3.1 方法和样本
 
-本轮为一位真实用户的连续任务式试用，材料包括聊天反馈、截图、对小云雀的实际交互观察，以及本地状态与输出核查。属于探索性可用性研究，没有标准化访谈录音、对照组或统计代表性。以下频次不解释为总体用户比例。
+本轮为一位真实用户的连续任务式试用，材料包括聊天反馈、截图、画布交互观察，以及本地状态与输出核查。属于探索性可用性研究，没有标准化访谈录音、对照组或统计代表性。以下频次不解释为总体用户比例。
 
 | 编号 | 观察/用户原意 | 解释与产品响应 | 状态 |
 |---|---|---|---|
@@ -62,12 +62,11 @@
 
 | 产品/类型 | 可核实能力 | 对绘映的启示 | 证据限制 |
 |---|---|---|---|
-| 小云雀 | 故事创作定位；本次实操观察到画布节点、素材上传、连线引用、双击菜单及选中视频操作区 | 让用户在内容周围操作，降低节点系统学习成本 | 官方定位不等于质量证明；未做其付费生成质量对照 |
 | Runway Workflows | 节点输入输出、分支、单节点/整体运行及工作流复用 | 显示依赖与运行范围；允许局部实验 | 公开帮助文档研究，不代表本地实际测评 |
 | Adobe Firefly Boards | 在画板组织媒体和生成素材；提供分镜到运动内容的工作流教程 | 在视觉规划与生成之间保留素材上下文 | 不据此推断成本或中文长叙事效果 |
 | 直接调用模型 API | 提供底层生成能力，应用需要自行管理状态、素材和错误 | 绘映的价值应在完整任务体验，而非仅包装输入框 | 本次项目集成经验 |
 
-资料：[小云雀官网](https://xyq.jianying.com/)、[Runway Workflows 介绍](https://help.runwayml.com/hc/en-us/articles/45763528999699-Introduction-to-Workflows)、[Firefly Boards 介绍](https://helpx.adobe.com/firefly/web/create-mood-boards/firefly-boards/about-firefly-boards.html)、[Firefly 分镜教程](https://helpx.adobe.com/uk/firefly/how-to/create-commercial-storyboard-firefly-boards.html)。本地观察见内部小云雀画布调研记录（未随开源仓库发布）。
+资料：[Runway Workflows 介绍](https://help.runwayml.com/hc/en-us/articles/45763528999699-Introduction-to-Workflows)、[Firefly Boards 介绍](https://helpx.adobe.com/firefly/web/create-mood-boards/firefly-boards/about-firefly-boards.html)、[Firefly 分镜教程](https://helpx.adobe.com/uk/firefly/how-to/create-commercial-storyboard-firefly-boards.html)。
 
 差异化假设：中文叙事流程、少量片段验证、明确生成范围和可控修改，比“更多模型入口”更适合当前目标用户。商业化可探索用户自带 Key 的软件服务，或平台托管计费；两者成本结构不同，尚未验证付费意愿，暂不制定售价。
 
