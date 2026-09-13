@@ -1,0 +1,21 @@
+# Credentials and runtime state
+**/config.yaml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Dependencies / build
+node_modules/
+.next/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.tsbuildinfo
+next-env.d.ts
+# Local generated assets, uploads, logs
+/backend/code/
+/backend/temp/
+*.log
+.DS_Store
